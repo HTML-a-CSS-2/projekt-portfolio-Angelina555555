@@ -1,0 +1,27 @@
+body {
+  background-color: #f8f8f8;
+}
+
+.blok {
+  width: 90%;
+  background-color: #f7caff;
+  padding: 2rem;
+}
+
+.blok__element-jedna {
+  font-size: 20px;
+  font-weight: 800;
+  text-align: justify;
+}
+
+.article {
+}
+
+.print {
+}
+
+.leader {
+}
+
+.buttom {
+}

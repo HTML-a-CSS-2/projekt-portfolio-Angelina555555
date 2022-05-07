@@ -1,0 +1,19 @@
+body {
+  background-color: #ffffdd;
+}
+
+.menu {
+  width: 100%;
+  background-color: #fdedf5;
+  padding: 2rem;
+}
+
+.article {
+  padding: 1rem;
+}
+
+.article__element-jeden,
+.article__element-dva,
+.article__element-tri {
+  padding: 2rem;
+}

@@ -1,0 +1,24 @@
+body {
+  background-color: #ffffdd;
+}
+
+.menu {
+  width: 100%;
+  background-color: #fdedf5;
+  padding: 2rem;
+}
+
+.article {
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.article__element-jeden,
+.article__element-dva,
+.article__element-tri {
+  padding: 1rem 1rem;
+  margin: 5px;
+  width: 30%;
+  height: 100px;
+}
