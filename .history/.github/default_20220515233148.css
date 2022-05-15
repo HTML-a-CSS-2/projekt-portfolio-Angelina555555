@@ -29,7 +29,6 @@ body {
 }
 .article {
   grid-column-start: 1;
-  grid-column-end: 1;
 }
 .leader {
   grid-column-end: span 3;
@@ -37,7 +36,6 @@ body {
 }
 .age {
   grid-column-start: 3;
-  grid-column-end: 3;
 }
 
 .blok-posledni {
