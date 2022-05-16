@@ -1,10 +1,9 @@
 body {
   background-color: #ffffdd;
 }
-
 .container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+
   grid-template-columns: minmax(30%, 1fr);
   grid-template-rows: 1fr 1fr 1fr;
   gap: 20px 50px;
@@ -28,8 +27,7 @@ body {
   gap: 1rem;
 }
 .article {
-  grid-column-start: 1;
-  grid-column-end: 1;
+  grid-column: 1;
 }
 .leader {
   grid-column-end: span 3;
@@ -37,7 +35,6 @@ body {
 }
 .age {
   grid-column-start: 3;
-  grid-column-end: 3;
 }
 
 .blok-posledni {
@@ -84,7 +81,7 @@ body {
   background-color: #aaeaeb;
 }
 .leader {
-  background-color: lightcyan;
+  background-color: white;
 }
 .leader__element-sest--padding-small {
   padding: 0.9rem;
@@ -95,10 +92,4 @@ body {
 
 .blok-posledni__element-devet--green {
   color: #0fffd9;
-}
-
-@media only screen and (min-device-width: 280px) and (max-device-width: 768px) {
-  .container {
-    display: inline-block;
-  }
 }

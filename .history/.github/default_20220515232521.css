@@ -29,7 +29,6 @@ body {
 }
 .article {
   grid-column-start: 1;
-  grid-column-end: 1;
 }
 .leader {
   grid-column-end: span 3;
@@ -37,7 +36,6 @@ body {
 }
 .age {
   grid-column-start: 3;
-  grid-column-end: 3;
 }
 
 .blok-posledni {
@@ -84,7 +82,7 @@ body {
   background-color: #aaeaeb;
 }
 .leader {
-  background-color: lightcyan;
+  background-color: white;
 }
 .leader__element-sest--padding-small {
   padding: 0.9rem;
@@ -97,8 +95,9 @@ body {
   color: #0fffd9;
 }
 
-@media only screen and (min-device-width: 280px) and (max-device-width: 768px) {
+@media screen and (max-width: 340px) {
   .container {
     display: inline-block;
+    width: 100%;
   }
 }

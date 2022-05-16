@@ -29,7 +29,6 @@ body {
 }
 .article {
   grid-column-start: 1;
-  grid-column-end: 1;
 }
 .leader {
   grid-column-end: span 3;
@@ -84,7 +83,7 @@ body {
   background-color: #aaeaeb;
 }
 .leader {
-  background-color: lightcyan;
+  background-color: white;
 }
 .leader__element-sest--padding-small {
   padding: 0.9rem;

@@ -1,56 +1,39 @@
 body {
   background-color: #ffffdd;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
 }
 
-.container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-columns: minmax(30%, 1fr);
-  grid-template-rows: 1fr 1fr 1fr;
-  gap: 20px 50px;
-}
 .menu {
   width: 100%;
-  height: 20%;
+  height: 10%;
+  grid-row-end: span 3;
   background-color: #fdedf5;
-  padding: 1rem;
-  font-size: 1rem;
-  margin-bottom: 20px;
+  padding: 2rem;
+  font-size: 1.5rem;
 }
 
 .article,
 .age,
 .leader,
 .blok-posledni {
+  padding: 1rem;
   display: flex;
   flex-wrap: wrap;
   text-align: center;
   gap: 1rem;
 }
-.article {
-  grid-column-start: 1;
-  grid-column-end: 1;
-}
-.leader {
-  grid-column-end: span 3;
-  align-items: center;
-}
-.age {
-  grid-column-start: 3;
-  grid-column-end: 3;
-}
 
-.blok-posledni {
-  grid-column-end: 3;
-}
 .article__element-jeden,
 .article__element-dva,
 .article__element-tri {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1rem;
-  font-size: 1rem;
+  padding: 1rem 1rem;
+  width: 30%;
+  font-size: 1.5rem;
 }
 
 .article__element-jeden--blue {
@@ -70,11 +53,12 @@ body {
 .age__element-ctyri,
 .age__element-pet,
 .leader__element-sest,
+.leader__element-sedm,
 .blok-posledni__element-osm,
 .blok-posledni__element-devet {
   padding: 1rem 1rem;
   margin: 2px;
-  font-size: 1rem;
+  font-size: 1.5rem;
 }
 
 .age__element-ctyri--green {
@@ -84,9 +68,10 @@ body {
   background-color: #aaeaeb;
 }
 .leader {
-  background-color: lightcyan;
+  background-color: white;
 }
-.leader__element-sest--padding-small {
+.leader__element-sest--padding-small,
+.leader__element-sedm--padding-small {
   padding: 0.9rem;
 }
 .blok-posledni__element-osm--mint {
@@ -95,10 +80,4 @@ body {
 
 .blok-posledni__element-devet--green {
   color: #0fffd9;
-}
-
-@media only screen and (min-device-width: 280px) and (max-device-width: 768px) {
-  .container {
-    display: inline-block;
-  }
 }
